@@ -1,6 +1,6 @@
 # Pterodactyl Panel 1.11.11 - Remote Code Execution (RCE)
 
-## 📌 Description
+##  Description
 
 This repository contains a **Proof of Concept (PoC)** exploit for:
 
@@ -16,7 +16,7 @@ This repository contains a **Proof of Concept (PoC)** exploit for:
 
 ---
 
-## 🧠 Vulnerability Overview
+##  Vulnerability Overview
 
 The vulnerability in **Pterodactyl Panel 1.11.11** allows an unauthenticated attacker to achieve **Remote Code Execution (RCE)** via path traversal and abuse of the PEAR `pearcmd` functionality.
 
@@ -29,7 +29,7 @@ The exploit works by:
 
 ---
 
-## ⚙️ Requirements
+##  Requirements
 
 * Python 3
 * `pwntools`
@@ -43,7 +43,7 @@ pip install pwntools requests
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 ```bash
 python3 exploit.py -url <TARGET> -lhost <YOUR_IP> -lport <YOUR_PORT>
@@ -63,7 +63,7 @@ nc -lvnp 4444
 
 ---
 
-## 🔥 How It Works
+##  How It Works
 
 ### Step 1 – Upload Web Shell
 
@@ -95,7 +95,7 @@ Which results in a reverse shell connection back to the attacker.
 
 ---
 
-## 🛡️ Impact
+##  Impact
 
 An attacker can:
 
@@ -108,7 +108,7 @@ An attacker can:
 
 ---
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This Proof of Concept is provided for:
 
@@ -122,7 +122,7 @@ The author is not responsible for any misuse or damage caused.
 
 ---
 
-## 🛠️ Mitigation
+## Mitigation
 
 * Upgrade Pterodactyl Panel to a patched version (when available)
 * Restrict access to `/locales/` endpoint
